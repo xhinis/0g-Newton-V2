@@ -1,4 +1,4 @@
-Certainly! Here’s the revised version with the comments before each `bash` command and no `#` in the commands themselves:
+
 
 ### Instructions for Retrieving and Modifying Ports for 0gchain Setup
 
