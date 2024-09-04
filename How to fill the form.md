@@ -11,7 +11,7 @@ sed -n '/\[json-rpc\]/,/\[.*\]/ { /^\s*address\s*=\s*".*"/p }' $HOME/.0gchain/co
 
 **Please note: Your ports might be different.**
 
-MY OUTPUT: laddr = address = "0.0.0.0:26145" and i will change that to my IP while i'm filling the form MYIP:26145 for my validator.
+MY OUTPUT: laddr = address = "0.0.0.0:26145" and i will change that to my IP while i'm filling the form http://MYIP:26145 for my validator.
 
 **Please note: Your ports might be different.**
 
