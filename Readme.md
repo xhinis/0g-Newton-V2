@@ -26,11 +26,6 @@
 | RAM         | 8+ GB                 |
 | Storage     | 400 GB SSD            |
 
-### Public RPC Endpoints
-
-- https://og-testnet-rpc.corenode.info/
-- https://og-testnet-api.corenode.info/
-
 ### ☀️ Required Installations
 ```bash
 sudo apt update && sudo apt upgrade -y
