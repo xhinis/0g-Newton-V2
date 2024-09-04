@@ -4,15 +4,11 @@ Certainly! Here’s the revised version with the comments before each `bash` com
 
 To fill out the form, you need to determine the ports used by your setup. The commands below will help you identify these ports.
 
-Retrieve the TCP or UNIX socket address for the RPC server to listen on:
-```bash
-sed -n '/# TCP or UNIX socket address for the RPC server to listen on/,+1p' /root/.0gchain/config/config.toml
-```
+**Please note: Your ports might be different.**
 
-Retrieve the node address:
-```bash
-sed -n 's/^node = ./&/p' /root/.0gchain/config/client.toml
-```
+MY OUTPUT: laddr = address = "0.0.0.0:26145" and i will change that to my IP while i'm filling the form MYIP:26145 for my validator.
+
+**Please note: Your ports might be different.**
 
 Retrieve the JSON-RPC address:
 ```bash
@@ -38,20 +34,8 @@ sed -i '/# TCP or UNIX socket address for the RPC server to listen on/!b;n;c\lad
 - **DA Node**: `YOUR_IP:34000` (default port)
 - **DA Client**: `YOUR_IP:51001` (default port)
 
-If you want to use your own RPC when setting up a Storage Node, you will use the output of this command:
 
-```bash
-sed -n '/\[json-rpc\]/,/\[.*\]/ { /^\s*address\s*=\s*".*"/p }' $HOME/.0gchain/config/app.toml
-```
 
-**Please note: Your ports might be different.**
-
-#### EVM RPC URL
-Access your EVM RPC at:
-
-```bash
-http://your_ip:YOUR_PORT/
-```
 
 [Form Link](https://docs.google.com/forms/d/e/1FAIpQLScsa1lpn43F7XAydVlKK_ItLGOkuz2fBmQaZjecDn76kysQsw/viewform?ts=6617a343)
 
