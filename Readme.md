@@ -212,9 +212,9 @@ while true; do    local_height=$(0gchaind status | jq -r .sync_info.latest_block
 
 ### ☀️ Faucet
 **NOTE:** Add your wallet to metamask from your seed phrases and use your wallet starting with 0x
-```bash
-[Faucet](https://faucet.0g.ai/) 
-```
+
+- [Faucet](https://faucet.0g.ai/) 
+
 
 ---
 
