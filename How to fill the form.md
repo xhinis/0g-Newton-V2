@@ -4,16 +4,16 @@
 
 To fill out the form, you need to determine the ports used by your setup. The commands below will help you identify these ports.
 
+Retrieve the JSON-RPC address:
+```bash
+sed -n '/\[json-rpc\]/,/\[.*\]/ { /^\s*address\s*=\s*".*"/p }' $HOME/.0gchain/config/app.toml
+```
+
 **Please note: Your ports might be different.**
 
 MY OUTPUT: laddr = address = "0.0.0.0:26145" and i will change that to my IP while i'm filling the form MYIP:26145 for my validator.
 
 **Please note: Your ports might be different.**
-
-Retrieve the JSON-RPC address:
-```bash
-sed -n '/\[json-rpc\]/,/\[.*\]/ { /^\s*address\s*=\s*".*"/p }' $HOME/.0gchain/config/app.toml
-```
 
 If the output shows `127.0.0.1`, you need to change it to `0.0.0.0`. Use the following commands:
 
