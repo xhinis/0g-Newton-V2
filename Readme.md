@@ -157,6 +157,8 @@ sed -i.bak -e "s%:26658%:${G_PORT}658%g; s%:26657%:${G_PORT}657%g; ..." $HOME/.0
 
 ### ☀️ Snap Installation
 
+🚨🚨🚨 ** Don't forget to backup your '' priv_validator_key.json '' inside of config folder. ** 🚨🚨🚨
+
 **NOTE:** If you want to use your own RPC on your storage node you have to use snapshot start from blockheight 0
 
 ```bash
