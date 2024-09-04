@@ -264,5 +264,6 @@ while true; do    local_height=$(0gchaind status | jq -r .sync_info.latest_block
 0gchaind tx slashing unjail --from wallet --chain-id zgtendermint_16600-2 --fees 5000ua0gi
 ```
 
+### **☀️ How to Fill the Form Guide**
 
-### ☀️ How to fill the form.
+For detailed instructions on how to fill out the form, refer to the [Guide on GitHub](https://github.com/xhinis/0g-Newton-V2/blob/main/How%20to%20fill%20the%20form.md).
