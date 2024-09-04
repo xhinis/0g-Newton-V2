@@ -262,7 +262,3 @@ sudo journalctl -u 0gchaind.service -f --no-hostname
 ```bash
 0gchaind tx slashing unjail --from wallet --chain-id zgtendermint_16600-2 --fees 5000ua0gi
 ```
-
----
-
-**If you have any questions, feel free to reach out via the community links provided above.**
