@@ -169,8 +169,17 @@ screen -S 0g
 ```
 ```bash
 sudo systemctl stop 0gchaind
+```
+```bash
+0gchaind tendermint unsafe-reset-all --home $HOME/.0gchain --keep-addr-book
+```
+```bash
 cp $HOME/.0gchain/data/priv_validator_state.json $HOME/.0gchain/priv_validator_state.json.backup
+```
+```bash
 curl -L https://vps5.josephtran.xyz/0g/0gchain_snapshot.lz4 | sudo lz4 -dc - | sudo tar -xf - -C $HOME/.0gchain
+```
+```bash
 mv $HOME/.0gchain/priv_validator_state.json.backup $HOME/.0gchain/data/priv_validator_state.json
 ```
 
