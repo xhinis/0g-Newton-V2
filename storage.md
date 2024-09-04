@@ -95,7 +95,7 @@ After=network.target
 [Service]
 User=root
 WorkingDirectory=$HOME/0g-storage-node/run
-ExecStart=$HOME/0g-storage-node/target/release/zgs_node --config config-testnet-standard.toml --miner-key Private-key-yaz --blockchain-rpc-endpoint https://evmrpc-testnet.0g.ai/
+ExecStart=$HOME/0g-storage-node/target/release/zgs_node --config config-testnet-standard.toml --miner-key YOUR-PRIVATEKEY --blockchain-rpc-endpoint https://YOURRPC/
 Restart=on-failure
 RestartSec=10
 LimitNOFILE=65535
