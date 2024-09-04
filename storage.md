@@ -83,7 +83,13 @@ $HOME/0g-storage-node/target/release/zgs_node --version
 
 **Note:** Enter your private key in the service file. If you use your own RPC, make sure your validator snapshot start from height 0
 
-**Note:** There are two types of execution. The turbo version is also available. Instead of `--config config-testnet-standard.toml`, you can use `--config config-testnet-turbo.toml`.
+**Note:**  If you are running storage validator on same server, you can get your rpc by using that command.
+
+```bash
+sed -n '/\[json-rpc\]/,/\[.*\]/ { /^\s*address\s*=\s*".*"/p }' $HOME/.0gchain/config/app.toml
+```
+EXAMPLE Output : address = "0.0.0.0:26145" ( storage on same server )
+If your storage on different server YOURIP:YOURPORT from the command above.
 
 ### ☀️ Setup the Service
 ```bash
